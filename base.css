@@ -1,10 +1,17 @@
 html, body {
     margin: 0;
 }
+
 body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
 }
 
 .wrapper {
@@ -13,26 +20,82 @@ body {
     margin: 0 auto;
     background-color: aquamarine;
 }
+
 .main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
+
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(6, 117, 117);
     padding: 10px 20px 0px;
+    
 }
+
+.menu ul {
+    padding-left: 10px;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    font: normal bold 24px "Montserrat", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
 .header {
     background-color: rgb(5, 108, 108);
+    align-items: center;
+    justify-content: center;
     min-height: 150px;
 }
+
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
     min-height: 150px;
+    padding-left: 20px;
+}
+
+.footer p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer p.contato {
+    padding-top: 5px;
+    margin-bottom: 18px;
+}
+
+table {
+    width: 700px;
+}
+
+table tr th#cabecalho-tabela {
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+table td {
+    text-align: center;
+}
+
+ /* Aplicando a cor nas linhas ímpares */
+tr:nth-child(odd) {
+    background-color: #b8b8b8;
+}
+
+/* Aplicando a cor nas linhas pares (opcional) */
+tr:nth-child(even) {
+    background-color: #ffffff;
 }
